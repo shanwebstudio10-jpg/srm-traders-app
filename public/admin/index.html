@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S.R.M. Traders - Admin</title><link rel="icon" href="/images/logo.png">
+<link rel="stylesheet" href="/admin/admin.css"></head>
+<body>
+<form class="login" id="login" hidden>
+  <img src="/images/logo.png" alt="" width="64" height="64">
+  <h1>S.R.M. TRADERS</h1><p class="muted">Owner login</p>
+  <input id="u" placeholder="Username" value="admin" autocomplete="username">
+  <input id="p" type="password" placeholder="Password" autocomplete="current-password">
+  <p class="err" id="lerr"></p>
+  <button class="btn">Log in</button>
+</form>
+<div class="shell" id="app" hidden>
+  <aside class="side">
+    <div class="logo"><img src="/images/logo.png" alt="" width="40" height="40"><span>S.R.M. TRADERS<small>Admin panel</small></span></div>
+    <button data-go="dashboard">Dashboard</button><button data-go="products">Products</button>
+    <button data-go="enquiries">Enquiries</button><button data-go="settings">Settings</button>
+    <a href="/" target="_blank">View website ↗</a><button id="logout">Log out</button>
+  </aside>
+  <main class="content" id="view"></main>
+</div>
+<script src="/admin/admin.js"></script>
+</body></html>

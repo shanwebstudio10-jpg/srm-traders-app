@@ -1,0 +1,16 @@
+# S.R.M. Traders - ONE Cloudflare project: website + admin + API + database
+name = "srm-traders-app"
+main = "src/worker.js"
+compatibility_date = "2024-11-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "srm-traders-db"
+database_id = "b6c0eacb-21e4-4f9c-b09f-c19f5bade6b7"
+
+[vars]
+ADMIN_USER = "admin"
